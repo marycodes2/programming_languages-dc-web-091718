@@ -38,7 +38,7 @@ def reformat_languages(languages)
         puts type_name
         puts style
         puts language
-        new_hash[language] = {:type => type}
+        new_hash[language] = {:type => type, :style => style}
       end 
     end
   end

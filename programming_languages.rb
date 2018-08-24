@@ -37,7 +37,7 @@ def reformat_languages(languages)
     language_data.each do |language, type_data|
       type_data.each do |type_name, type|
         if new_hash.keys.include? language
-          repeat_language = language
+            repeat_language = language
             puts language
             puts repeat_language
             new_hash[repeat_language][:style] << style

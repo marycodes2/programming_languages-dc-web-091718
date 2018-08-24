@@ -38,14 +38,12 @@ def reformat_languages(languages)
       type_data.each do |type_name, type|
         if new_hash.keys.include? language
           repeat_language = language
-          #if language = repeat_language
             puts language
             puts repeat_language
             new_hash[repeat_language][:style] << style
             repeat_style_list = new_hash[repeat_language][:style]
             repeat_style_list = repeat_style_list.flatten!
             new_hash[language] = {:type => type, :style => repeat_style_list}
-          #end
         else
           puts "HELLO"
           new_hash[language] = {:type => type, :style => style}

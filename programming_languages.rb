@@ -36,7 +36,10 @@ def reformat_languages(languages)
     style = style.split
     language_data.each do |language, type_data|
       type_data.each do |type_name, type|
-        new_hash[language] = {:type => type, :style => style}
+        if new_hash.keys.include? language
+          puts language
+        else
+          new_hash[language] = {:type => type, :style => style}
       end 
     end
   end

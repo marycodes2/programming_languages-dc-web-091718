@@ -37,6 +37,7 @@ def reformat_languages(languages)
         puts type
         puts type_name
         puts style
+        puts language
       end 
     end
   end

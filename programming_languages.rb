@@ -39,8 +39,6 @@ def reformat_languages(languages)
         if new_hash.keys.include? language
             puts "messing with #{language} before adding to new hash"
             repeat_language = language
-            puts language
-            puts repeat_language
             new_hash[repeat_language][:style] << style
             repeat_style_list = new_hash[repeat_language][:style]
             repeat_style_list = repeat_style_list.flatten!

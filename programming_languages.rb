@@ -46,6 +46,7 @@ def reformat_languages(languages)
             new_hash[language] = {:type => type, :style => repeat_style_list}
           end
         else
+          puts "HELLO"
           new_hash[language] = {:type => type, :style => style}
         end     
       end

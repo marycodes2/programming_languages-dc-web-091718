@@ -40,7 +40,7 @@ def reformat_languages(languages)
           repeat_language = language
           if language = repeat_language
             repeat_language_styles = []
-            puts style
+            repeat_language_styles << style
         end 
         else
           new_hash[language] = {:type => type, :style => style}

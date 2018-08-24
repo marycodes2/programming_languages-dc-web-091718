@@ -35,6 +35,7 @@ def reformat_languages(languages)
     language_data.each do |language, type_data|
       type.each do |type_name, type|
         puts type
+      end 
     end
   end
 end

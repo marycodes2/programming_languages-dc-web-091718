@@ -39,13 +39,10 @@ def reformat_languages(languages)
         if new_hash.keys.include? language
           repeat_language = language
           if language = repeat_language
-            repeat_language_styles = []
-            repeat_language_styles << style
             puts new_hash[repeat_language][:style] << style
             puts "NEWW:"
             puts new_hash[repeat_language][:style]
           end
-          puts repeat_language_styles
         else
           new_hash[language] = {:type => type, :style => style}
         end     
